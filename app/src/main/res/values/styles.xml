@@ -1,0 +1,10 @@
+<resources>
+    <!-- Your custom TextInputLayout appearance -->
+    <style name="TextInputLayoutAppearance" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColorHint">#757575</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Other styles can be added here -->
+</resources>
