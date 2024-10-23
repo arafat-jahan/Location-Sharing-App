@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/drawer_vibrant_gradient">
+    android:background="@drawable/profile_button_bg">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_Image"
@@ -12,7 +12,7 @@
         android:layout_height="96dp"
         android:layout_marginTop="4dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/arafat"
+        android:src="@drawable/locationapplogo"
         app:civ_border_color="@color/black"
         app:civ_border_width="4dp"
         app:layout_constraintEnd_toEndOf="parent"

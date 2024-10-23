@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/profile_gradient_background.xml -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
-        <shape>
-            <solid android:color="#FFFFFF"/>
-            <corners android:radius="50dp"/>
-        </shape>
-    </item>
-    <item android:top="20dp" android:left="0dp">
-        <shape>
-            <solid android:color="#BBDEFB"/>
-            <corners android:radius="50dp"/>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#8E2DE2"
+                android:endColor="#4A00E0"
+                android:angle="45"/>
         </shape>
     </item>
 </layer-list>

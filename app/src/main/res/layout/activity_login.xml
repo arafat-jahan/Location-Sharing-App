@@ -2,85 +2,91 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:layout_marginTop="100dp"
+    android:layout_marginBottom="100dp"
+   android:background="@drawable/profile_button_bg"
     android:padding="30dp"
     tools:context=".view.LoginActivity">
 
-    <!-- Sign In Title -->
+    <!-- Title -->
     <TextView
         android:id="@+id/titleTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Sign In"
+        android:layout_marginTop="60dp"
+        android:text="Sign In!"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/white"
         android:textSize="32sp"
         android:textStyle="bold"
-        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Email Input -->
+    <!-- Email Input Field -->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/emailLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:hint="Enter your email..."
+        android:layout_marginTop="30dp"
+        android:hint="Gmail"
+        android:textColorHint="@color/white"
         app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleTxt">
+        app:layout_constraintTop_toBottomOf="@id/titleTxt"
+        app:startIconDrawable="@drawable/mail">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:textColor="#000000"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Password Input -->
+    <!-- Password Input Field -->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout1"
+        android:id="@+id/passwordLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:hint="Enter your password..."
+        android:hint="Password"
+        android:textColorHint="@color/white"
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textInputLayout">
+        app:layout_constraintTop_toBottomOf="@id/emailLayout"
+        app:startIconDrawable="@drawable/padlock">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:padding="10dp"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:inputType="textPassword" />
+            android:textColor="@color/white"
+            android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Login Button -->
+    <!-- Sign In Button -->
     <Button
-        style="@style/Widget.AppCompat.Button"
         android:id="@+id/loginBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:background="@drawable/gradient_button"
-        android:text="Login"
-        android:textColor="#FFFFFF"
+        android:text="Sign In"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textInputLayout1" />
-
-
+        app:layout_constraintTop_toBottomOf="@id/passwordLayout" />
 
     <!-- Forgot Password Link -->
     <TextView
@@ -89,9 +95,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Forgot password?"
-        android:textColor="#FF5722"
-        android:textStyle="bold"
+        android:textColor="@android:color/white"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/loginBtn" />
@@ -102,7 +108,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Don't have an account? Register"
+        android:text="Don't have an account? Sign up"
         android:textColor="#03A9F4"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
